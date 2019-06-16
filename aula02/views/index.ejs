@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+  <table>
+    <tr style="background: #ccc">
+      <td>Nome</td>
+      <td>Idade</td>
+    </tr>
+    <% customers.forEach(function(item) { %>
+    <tr>
+      <td><%= item.nome %></td>
+      <td><%= item.idade %></td>
+    </tr>
+    <% }) %>
+  </table>
+</body>
+
+</html>
